@@ -1,0 +1,31 @@
+1. .git - used to store the history of logs
+2. git init - Initialized empty Git repository
+3. touch - create a file
+4. git status - to get the status or history of records
+5. git add ./<file name> - all untracked files will be staged but their photos are not taken
+6. git commit -m <file name> : photos are taken now
+7. git restore --staged <file_name> : unstage
+8. rm -rf <file_name> : recursively force delete the file
+9. git log - all the commited logs are shown
+10. git reset <hashKey> - all the commits above that hashKey/log will be removed. And all the commits before this will be on unstagged area.
+11. vi <file_name> - editing file in vim.
+    i. esc -> :x -> enter - save & exit
+    ii. "i" - go into insert mode
+12. git stash - to keep files, changes & modifications in backstage. Please do git add before this.
+13. git stash pop - to bring back the modifications from backstage
+14. git stash clear - Permanently remove files from stash
+15. git remote add <name> : Attaching github/gitlab URL with local repository. 
+        remote - i.e. working with URLs, add - adding a new URL, name(by convention it is "origin" when working with my personal account), <url>.
+16. git remote -v : shows all url attached to the local repository.
+17. git push origin master : "origin" - which url you want to push your changes, "master" - in which branch you want to push.
+17. git branch <branch_name> - 
+18. git checkout <branch_name> - head points to <branch_name> & all commits now directed to <branch_name>.
+19. git merge <branch_name> - merging your branch to main branch.
+20. git clone <URL> - After forking/copying from another's project, we download it to local desktop
+21. upstream url - the original url from where you have forked
+22. git remote add upstream - attaching upstream url with local repository
+/* 1 branch = 1 pull request. For every new feature/bug crete new branch, so that a new pull request can be opened.*/
+23. git push origin <branch_name> -f: force push the branch to origin.
+24. git pull origin <branch_name> : pull origin's updates to local repository where head will point to <branch_name>
+25. git pull upstream main: pull all upstream's updates to local repository main branch.
+26. git rebase -i <hashKey> - Used to multiple commits into 1. If you have multiple(4) commits, pick 1 top commit and squash other 3 commits into that.
